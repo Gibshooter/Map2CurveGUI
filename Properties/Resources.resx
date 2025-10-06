@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="help_rtf_round" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_round.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_c_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_c_enable.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_ramp0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_ramp0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_TechChamber_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_TechChamber_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_bounds0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_bounds0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_flatcircle0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_flatcircle0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_flatcircle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_flatcircle.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HowTo_Path_Corner_1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_Path_Corner_1_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_gaps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_gaps.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_shift5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_shift5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_Duplicate_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Duplicate_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_PathCorner1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_PathCorner1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_transit_tri0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_transit_tri0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_draw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_draw.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_res" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_res.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HowTo_Detail_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_Detail_1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hshiftsrc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hshiftsrc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_bounds1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_bounds1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_scale_rand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_scale_rand.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_heightmode12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_round1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_round1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_range" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_range.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hstretch0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hstretch0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_PathCorner0_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_PathCorner0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_height" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_height.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Temp_LabHallway2_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_LabHallway2_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_Circle_Texmode0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Circle_Texmode0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_PipeShaft_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_PipeShaft_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_TechChamber_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_TechChamber_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TXT_TEMPLATE_4" xml:space="preserve">
+    <value>- best suited for low res landscape
+- generated geometry can be modified easier
+- generated vertices will stay on grid
+- semi seamless texture mapping by default</value>
+  </data>
+  <data name="HowTo_Detail_1_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_Detail_1_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hshiftsrc0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hshiftsrc0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_shift2_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_shift3_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HowTo_Detail_2_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_Detail_2_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_scale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_scale.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_p_split" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_p_split.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_heightmode10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_ramp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_ramp.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_d_autopitch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_autopitch.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_texmode1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_texmode1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_autoname" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_autoname.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_type" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_type.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TXT_MOREINFO" xml:space="preserve">
+    <value>For more information, turn off auto close in settings.</value>
+  </data>
+  <data name="Temp_XenAlley_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_XenAlley_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tutorial_Detail_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tutorial_Detail_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon512_v2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon512_v2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_XenAlley_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_XenAlley_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sign_Success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sign_Success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_circlemode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_circlemode.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ico32_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico32_editor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_texmode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_texmode.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_tri0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_tri0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_flatcircle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_flatcircle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_transit_round1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_transit_round1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sign_Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sign_Warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TXT_TEMPLATE_5" xml:space="preserve">
+    <value>- suited for high res terrain and architecture
+- completely seamless texture mapping
+- generated vertices will most likely
+have floating point positions</value>
+  </data>
+  <data name="help_rtf_append" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_append.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TXT_TEMPLATE_2" xml:space="preserve">
+    <value>- suited for rare objects (e.g. unique eyecatchers)
+- fully seamless texture mapping
+- high polygon usage</value>
+  </data>
+  <data name="help_rtf_d_movey_rand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_movey_rand.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_bounds2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_bounds2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TXT_NO_LOG_FILE_FOUND" xml:space="preserve">
+    <value>No Log found in root dir!</value>
+  </data>
+  <data name="Temp_SqueakyRail_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_SqueakyRail_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_DecoBridge_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_DecoBridge_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_shift" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_shift.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_heightmode1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_RailTunnel2_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_RailTunnel2_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_move" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_move.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_nulltex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_nulltex.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_source.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_heightmode0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sign_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sign_Error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_type0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_type0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hstretchamt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hstretchamt.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_splinefile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_splinefile.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Wizard_PathCorner1_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_PathCorner1_Input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_mirror_src1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_mirror_src1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TXT_TEMPLATE_3" xml:space="preserve">
+    <value>- allows for highly complex input brushwork
+(recreate input brushes when errors occur)
+- will cut any solid entity (point-entities will be removed)
+- worldbrushes will be ignored
+- currently only available for the circle framework</value>
+  </data>
+  <data name="Temp_PipeShaft_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_PipeShaft_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_shift1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_shift1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_tri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_tri.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_nulltex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_nulltex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TXT_TEMPLATE_1" xml:space="preserve">
+    <value>- suited for common objects and architecture
+- relatively low polygone usage
+- positions of generated vertices will contain
+floating point numbers per default</value>
+  </data>
+  <data name="help_rtf_d_pos_rand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_pos_rand.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_mirror_src" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_mirror_src.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="help_rtf_d_skip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_skip.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Wizard_Duplicate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Duplicate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hstretch1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hstretch1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_TechPipeHollow_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_TechPipeHollow_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_mapcarve0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_mapcarve0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ico32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ico32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_Circle_Texmode1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Circle_Texmode1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico20_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico20_save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_transit_tri1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_transit_tri1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_DecoBridge_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_DecoBridge_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_PathCorner1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_PathCorner1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_p_evenout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_p_evenout.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HowTo_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_Composition_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_Composition_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_height" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_height.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_scale_src" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_scale_src.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_target" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_target.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_heightmode8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_Circle_Texmode0_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Circle_Texmode0_Input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_transit_tri" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_transit_tri.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_ramp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_ramp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_rotz_rand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_rotz_rand.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Wizard_Duplicate_input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Duplicate_input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico20_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico20_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_PathCorner0_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_PathCorner0_Input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_autoassign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_autoassign.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_d_pos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_pos.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Temp_LabHallway2_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_LabHallway2_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_ConcreteWalk_Preview_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_ConcreteWalk_Preview_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_bounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_bounds.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TXT_SPECIFY_M2C_EXE" xml:space="preserve">
+    <value>Please specify Map2Curve.exe location in Settings tab first!</value>
+  </data>
+  <data name="help_rtf_d_draw_rand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_draw_rand.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Map2Curve_Small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Map2Curve_Small.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_hshiftoffset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_hshiftoffset.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Temp_RailTunnel2_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_RailTunnel2_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HowTo_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_ConcreteWalk_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_ConcreteWalk_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_enable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_enable.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_icon18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_icon18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_Circle_Texmode1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Circle_Texmode1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_skipnull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_skipnull.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_d_carve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_carve.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Temp_WaterPipe_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_WaterPipe_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_type1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_type1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HowTo_2_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_2_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_DecoBridgeRamp_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_DecoBridgeRamp_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_rot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_rot.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_shift0_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_shift0_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_gaplen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_gaplen.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_p_reverse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_p_reverse.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Temp_TechPipeHollow_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_TechPipeHollow_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_ConcreteWalk_Preview_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_ConcreteWalk_Preview_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_p_scale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_p_scale.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_hshiftoffset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hshiftoffset.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_TechBridge_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_TechBridge_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HowTo_Detail_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_Detail_1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_mirror0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_mirror0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_p_expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_p_expand.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Wizard_Circle_Texmode1_Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Circle_Texmode1_Input.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_TechBridge_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_TechBridge_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_autoyaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_autoyaw.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Wizard_PathCorner0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_PathCorner0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_heightmode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_heightmode.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_rad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_radius.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_transit_round0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_transit_round0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_mirror1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_mirror1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_texmode0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_texmode0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_SqueakyRail_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_SqueakyRail_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_heightmode11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_mirror" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_mirror.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_spike_height" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_spike_height.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HowTo_Path_Corner_1_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_Path_Corner_1_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_LabHallway_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_LabHallway_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_rot_src" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_rot_src.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_mapcarve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_mapcarve.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_mapcarve1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_mapcarve1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_offset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_offset.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HowTo_2_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_2_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Map2Curve_Grey_Small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Map2Curve_Grey_Small.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_d_separate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_d_separate.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_round0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_round0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_Composition_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_Composition_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_hstretch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_hstretch.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_mirror_src0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_mirror_src0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_p_cornerfix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_p_cornerfix.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_hstretchamt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_hstretchamt.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_heightmode13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_heightmode13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_LabHallway_Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_LabHallway_Preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_gridsize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_gridsize.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_range" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_range.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_hshiftsrc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_hshiftsrc.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HowTo_2_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_2_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_type2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_type2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_offset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_offset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TXT_TEMP_ConcreteWalk" xml:space="preserve">
+    <value>- showcases "mapcarve" setting (new in v0.82)
+- enables for arcs with a radius smaller than the depth of the original brushwork (Y-axis size)
+- requires negative offset to have an effect</value>
+  </data>
+  <data name="Wizard_Circle_Texmode0_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard_Circle_Texmode0_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_WaterPipe_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_WaterPipe_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_res" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_res.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_transit_round" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_transit_round.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_type3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_type3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="help_rtf_rad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_rad.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HowTo_Path_Corner_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HowTo_Path_Corner_1_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_tri1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_tri1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ico20_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ico20_editor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
