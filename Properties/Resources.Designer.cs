@@ -389,8 +389,29 @@ namespace Map2CurveGUI.Properties {
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die {\rtf1\ansi\deff3\adeflang1025
-        ///{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f5\froman\fprq2\fcharset0 Consolas;}{\f6\fnil\fprq2\fcharset0 0;}{\f7\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f8\fnil\fprq2\fcharset0 Arial;}{\f9\fnil\fprq2\fcharset0 OpenSymbol{\*\falt Arial Unicode MS};}}
+        ///{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Consolas;}{\f5\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 0;}{\f7\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f8\fnil\fprq2\fcharset0 OpenSymbol{\*\falt Arial Unicode MS};}{\f9\fnil\fprq2\fcharset0 Arial;}}
         ///{\colortbl;\re [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        public static string help_rtf_hsunequalfix {
+            get {
+                return ResourceManager.GetString("help_rtf_hsunequalfix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {\rtf1\ansi\deff3\adeflang1025
+        ///{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Consolas;}{\f5\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 0;}{\f7\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f8\fnil\fprq2\fcharset0 OpenSymbol{\*\falt Arial Unicode MS};}{\f9\fnil\fprq2\fcharset0 Arial;}}
+        ///{\colortbl;\re [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        public static string help_rtf_hsunpropfix {
+            get {
+                return ResourceManager.GetString("help_rtf_hsunpropfix", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die {\rtf1\ansi\deff3\adeflang1025
+        ///{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Consolas;}{\f5\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f7\fnil\fprq2\fcharset0 0;}{\f8\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f9\fnil\fprq2\fcharset0 OpenSymbol{\*\falt Arial Uni [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
         public static string help_rtf_mapcarve {
             get {
@@ -554,8 +575,7 @@ namespace Map2CurveGUI.Properties {
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die {\rtf1\ansi\deff3\adeflang1025
-        ///{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Consolas;}{\f5\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f6\fnil\fprq2\fcharset0 0;}{\f7\fnil\fprq2\fcharset0 Microsoft YaHei;}{\f8\fnil\fprq2\fcharset0 Arial;}{\f9\fnil\fprq2\fcharset0 OpenSymbol{\*\falt Arial Unicode MS};}}
-        ///{\colortbl;\re [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        ///{\fonttbl{\f0\froman\fprq2\fcharset0 Times New Roman;}{\f1\froman\fprq2\fcharset2 Symbol;}{\f2\fswiss\fprq2\fcharset0 Arial;}{\f3\froman\fprq2\fcharset0 Liberation Serif{\*\falt Times New Roman};}{\f4\froman\fprq2\fcharset0 Consolas;}{\f5\fnil\fprq0\fcharset2 OpenSymbol{\*\falt Arial Unicode MS};}{\f6\fswiss\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f7\froman\fprq2\fcharset0 Liberation Sans{\*\falt Arial};}{\f8\fnil\fprq2\fcharset0 0;}{\f9\fnil\fprq2\fcharset0 Microso [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
         /// </summary>
         public static string help_rtf_res {
             get {
@@ -1209,6 +1229,46 @@ namespace Map2CurveGUI.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap preview_hsunequalfix0 {
+            get {
+                object obj = ResourceManager.GetObject("preview_hsunequalfix0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap preview_hsunequalfix1 {
+            get {
+                object obj = ResourceManager.GetObject("preview_hsunequalfix1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap preview_hsunpropfix0 {
+            get {
+                object obj = ResourceManager.GetObject("preview_hsunpropfix0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap preview_hsunpropfix1 {
+            get {
+                object obj = ResourceManager.GetObject("preview_hsunpropfix1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap preview_mapcarve0 {
             get {
                 object obj = ResourceManager.GetObject("preview_mapcarve0", resourceCulture);
@@ -1599,6 +1659,36 @@ namespace Map2CurveGUI.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Temp_CZGCircle_Preview_1 {
+            get {
+                object obj = ResourceManager.GetObject("Temp_CZGCircle_Preview_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Temp_CZGCircle_Preview_2 {
+            get {
+                object obj = ResourceManager.GetObject("Temp_CZGCircle_Preview_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Temp_CZGCircle_Source {
+            get {
+                object obj = ResourceManager.GetObject("Temp_CZGCircle_Source", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Temp_DecoBridge_Preview {
             get {
                 object obj = ResourceManager.GetObject("Temp_DecoBridge_Preview", resourceCulture);
@@ -1871,6 +1961,16 @@ namespace Map2CurveGUI.Properties {
         public static string TXT_TEMP_ConcreteWalk {
             get {
                 return ResourceManager.GetString("TXT_TEMP_ConcreteWalk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die - showcases new texture scale fix of the v0.88 update for Grid-Circle framework (aka CZG Circle) which occurs due to the sections having different lengths instead of just one like with the Pi-Circle framework
+        ///- also showcases unproportional texture scale fix that might help when using a fixed horizontal stretch amount on arcs with a small inner radius that would lead to heavily distorted textures ähnelt.
+        /// </summary>
+        public static string TXT_TEMP_CZGCircle {
+            get {
+                return ResourceManager.GetString("TXT_TEMP_CZGCircle", resourceCulture);
             }
         }
         

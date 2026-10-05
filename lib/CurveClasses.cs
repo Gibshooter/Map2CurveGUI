@@ -89,6 +89,8 @@ namespace Map2CurveGUI
         gridsize_y,
         gridsize_z,
         gaplen,
+		hsunpropfix_lower,
+		hsunpropfix_upper,
 
 		// int
         res,
@@ -140,7 +142,9 @@ namespace Map2CurveGUI
         mirror_z,
         mirror_src_x,
         mirror_src_y,
-        mirror_src_z
+        mirror_src_z,
+		hsunequalfix,
+		hsunpropfix
     }
 
 
@@ -183,7 +187,8 @@ namespace Map2CurveGUI
 		public float[] d_scale_rand_mm	= new float[] { 0, 0 };
 		public float[] gridsize			= new float[] { 1, 1, 1 };
 		public float gaplen				= 256;
-
+		public float[] hsunpropfix_limits = new float[] { 0.2f, 5.0f };
+		
 		public int res					= 8;
 		public int type					= 0;
 		public int shift				= 5;
@@ -229,6 +234,8 @@ namespace Map2CurveGUI
 		public bool gaps				= false;
 		public bool[] mirror			= new bool[] { false, false, false };
 		public bool[] mirror_src		= new bool[] { false, false, false };
+		public bool hsunequalfix		= true;
+		public bool hsunpropfix			= true;
 
 
 		public void setCurveValues(cVar Val, ref object sender, string S)
@@ -283,6 +290,8 @@ namespace Map2CurveGUI
                 case cVar.mirror_src_x:		mirror_src[0]	= B; break;
                 case cVar.mirror_src_y:		mirror_src[1]	= B; break;
                 case cVar.mirror_src_z:		mirror_src[2]	= B; break;
+                case cVar.hsunequalfix:		hsunequalfix	= B; break;
+                case cVar.hsunpropfix:		hsunpropfix		= B; break;
             }
         }
 
@@ -346,6 +355,8 @@ namespace Map2CurveGUI
                 case cVar.gridsize_y:			gridsize[1]			= F; break;
                 case cVar.gridsize_z:			gridsize[2]			= F; break;
                 case cVar.gaplen:				gaplen				= F; break;
+                case cVar.hsunpropfix_lower:	hsunpropfix_limits[0]= F; break;
+                case cVar.hsunpropfix_upper:	hsunpropfix_limits[1]= F; break;
 			}
         }
 
@@ -407,6 +418,8 @@ namespace Map2CurveGUI
 			flatcircle = Curve.flatcircle;
 			ramp = Curve.ramp;
 			hstretch = Curve.hstretch;
+			hsunequalfix = Curve.hsunequalfix;
+			hsunpropfix = Curve.hsunpropfix;
 
 			// textboxes numbers
 			rad = Curve.rad;
@@ -417,6 +430,8 @@ namespace Map2CurveGUI
 			height = Curve.height;
 			hshiftoffset = Curve.hshiftoffset;
 			hstretchamt = Curve.hstretchamt;
+			hsunpropfix_limits[0] = Curve.hsunpropfix_limits[0];
+			hsunpropfix_limits[1] = Curve.hsunpropfix_limits[1];
 		}
 
 		public void setTab2(ref CurveObject Curve)
@@ -610,6 +625,8 @@ namespace Map2CurveGUI
 			if (ExportAll || (!ExportAll && Differs[54, c])) CurveBuffer += "flatcircle\t" + Convert.ToInt32(flatcircle) + "\r\n";
 			if (ExportAll || (!ExportAll && Differs[57, c])) CurveBuffer += "hstretch\t" + Convert.ToInt32(hstretch) + "\r\n";
 			if (ExportAll || (!ExportAll && Differs[58, c])) CurveBuffer += "hstretchamt\t" + hstretchamt + "\r\n";
+			if (ExportAll || (!ExportAll && Differs[67, c])) CurveBuffer += "hsunequalfix\t" + Convert.ToInt32(hsunequalfix) + "\r\n";
+            if (ExportAll || (!ExportAll && Differs[68, c])) CurveBuffer += "hsunpropfix\t" + "\"" + Convert.ToInt32(hsunpropfix) + " " + hsunpropfix_limits[0] + " " + hsunpropfix_limits[1] + "\"" + "\r\n";
 			if (ExportAll || (!ExportAll && Differs[60, c])) CurveBuffer += "hshiftsrc\t" + hshiftsrc + "\r\n";
 			if (ExportAll || (!ExportAll && Differs[18, c])) CurveBuffer += "rot\t\t" + "\"" + rot[0] + " " + rot[1] + " " + rot[2] + "\"" + "\r\n";
 			if (ExportAll || (!ExportAll && Differs[21, c])) CurveBuffer += "rot_src\t\t" + "\"" + rot_src[0] + " " + rot_src[1] + " " + rot_src[2] + "\"" + "\r\n";
@@ -660,6 +677,7 @@ namespace Map2CurveGUI
 			if (sTable.values_set[52]) d_autoassign = sTable.values_b[52];
 			if (sTable.values_set[53]) d_circlemode = sTable.values_b[53];
 			if (sTable.values_set[27]) gaps = sTable.values_b[27];
+			if (sTable.values_set[67]) hsunequalfix = sTable.values_b[67];
 
 			// int
 			if (sTable.values_set[2]) res = sTable.values_i[2];
@@ -722,6 +740,8 @@ namespace Map2CurveGUI
 			if (sTable.values_set[63]) gridsize[0] = sTable.values_v[63, 0];
 			if (sTable.values_set[63]) gridsize[1] = sTable.values_v[63, 1];
 			if (sTable.values_set[63]) gridsize[2] = sTable.values_v[63, 2];
+			if (sTable.values_set[68]) hsunpropfix_limits[0] = sTable.values_v[68, 1];
+			if (sTable.values_set[68]) hsunpropfix_limits[1] = sTable.values_v[68, 2];
 
 			// bool transform
 			if (sTable.values_set[42]) d_draw_rand = Convert.ToBoolean(sTable.values_v[42, 0]);
@@ -729,6 +749,7 @@ namespace Map2CurveGUI
 			if (sTable.values_set[39]) d_rotz_rand = Convert.ToBoolean(sTable.values_v[39, 0]);
 			if (sTable.values_set[40]) d_movey_rand = Convert.ToBoolean(sTable.values_v[40, 0]);
 			if (sTable.values_set[55]) d_scale_rand = Convert.ToBoolean(sTable.values_v[55, 0]);
+			if (sTable.values_set[68]) hsunpropfix = Convert.ToBoolean(sTable.values_v[68, 0]);
 
 			//strings
 			int l, len, m;
@@ -823,6 +844,8 @@ namespace Map2CurveGUI
 			if (gaplen != Compare.gaplen) Differs[28, c] = true;
 			if (!IsVectorSameAs(ref mirror, ref Compare.mirror)) Differs[65, c] = true;
 			if (!IsVectorSameAs(ref mirror_src, ref Compare.mirror_src)) Differs[66, c] = true;
+			if (hsunequalfix != Compare.hsunequalfix) Differs[67, c] = true;
+			if (!IsVector2SameAs(ref hsunpropfix, ref Compare.hsunpropfix, ref hsunpropfix_limits, ref Compare.hsunpropfix_limits)) Differs[68, c] = true;
         }
 
 		public bool AreCurvesSame(ref CurveObject Compare)
@@ -890,6 +913,8 @@ namespace Map2CurveGUI
 			if (gaplen != Compare.gaplen) same = false;
             if (mirror != Compare.mirror) same = false;
             if (mirror_src != Compare.mirror_src) same = false;
+			if (hsunequalfix != Compare.hsunequalfix) same = false;
+			if (!IsVector2SameAs(ref hsunpropfix, ref Compare.hsunpropfix, ref hsunpropfix_limits, ref Compare.hsunpropfix_limits)) same = false;
 
             return same;
 		}
@@ -1231,11 +1256,13 @@ namespace Map2CurveGUI
 			"gridsize",
 			"mapcarve",
             "mirror",
-            "mirror_src"
+            "mirror_src",
+            "hsunequalfix",
+            "hsunpropfix"
 		};
 
 		// 0 = bool, 1 = int, 2 = float, 3 = string, 4 = tform
-		public static int[] keyword_type = { 2, 2, 1, 1, 0, 1, 3, 0, 0, 0, 2, 0, 0, 0, 0, 0, 3, 2, 4, 4, 2, 4, 1, 2, 2, 0, 0, 0, 2, 0, 0, 0, 0, 2, 3, 2, 0, 0, 4, 4, 4, 1, 0, 1, 1, 4, 2, 0, 0, 0, 1, 0, 0, 0, 0, 4, 0, 0, 2, 2, 1, 3, 3, 4, 1, 1, 1};
+		public static int[] keyword_type = { 2, 2, 1, 1, 0, 1, 3, 0, 0, 0, 2, 0, 0, 0, 0, 0, 3, 2, 4, 4, 2, 4, 1, 2, 2, 0, 0, 0, 2, 0, 0, 0, 0, 2, 3, 2, 0, 0, 4, 4, 4, 1, 0, 1, 1, 4, 2, 0, 0, 0, 1, 0, 0, 0, 0, 4, 0, 0, 2, 2, 1, 3, 3, 4, 1, 1, 1, 0, 4};
 
 		//int[] keyword_min = { -131072, -131072, 0, 0, 0, 0, 0, 0, 0, 0, -131072, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -131072, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, -131072, 0, 0 };
 		//int[] keyword_max = { 131072, 131072, 384, 3, 1, 5, 255, 1, 1, 1, 131072, 1, 1, 1, 1, 1, 255, 30, 30, 30, 30, 1, 2, 100, 100, 1, 1, 1, 131072, 1, 1, 1, 1, 1, 15, 131072, 1, 1, 30, 30, 30, 384, 1, 384, 14, 30, 131072, 1, 1, 1, 1, 1, 1, 1, 1, 10, 1, 1, 65536, 131072, 1, 255 };
@@ -1338,17 +1365,17 @@ namespace Map2CurveGUI
 				for (int i = 0; i < found_values.Count(); i++)
 				{
 					if (found_values_valueID[i] == 0) tCurves++;
+					//string test = "";
+					//test += "|vID|" + found_values_valueID[i] + " |cID|" + found_values_curveID[i] + " |Val|" + found_values[i] + "|\r\n";
+					//MessageBox.Show(test);
 				}
+
 			}
 			catch (Exception e)
 			{
 				MessageBox.Show("There was a problem reading this preset file!\r\n" + e.Message);
 			}
 		}
-
-		//string test = "";
-		//test += "|vID|" + found_values_valueID[i] + "|cID|" + found_values_curveID[i] + "|Val|" + found_values[i] + "|\r\n";
-		//MessageBox.Show(test);
 
 		public void ProcessPresetFile(ref List<CurveObject> CurveList)
 		{

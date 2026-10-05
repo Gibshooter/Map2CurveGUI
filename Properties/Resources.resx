@@ -723,4 +723,35 @@ floating point numbers per default</value>
   <data name="ico20_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ico20_editor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="help_rtf_hsunequalfix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_hsunequalfix.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="help_rtf_hsunpropfix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help_rtf_hsunpropfix.rtf;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="preview_hsunequalfix0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hsunequalfix0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hsunequalfix1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hsunequalfix1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hsunpropfix0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hsunpropfix0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview_hsunpropfix1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview_hsunpropfix1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_CZGCircle_Preview_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_CZGCircle_Preview_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_CZGCircle_Preview_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_CZGCircle_Preview_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temp_CZGCircle_Source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temp_CZGCircle_Source.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TXT_TEMP_CZGCircle" xml:space="preserve">
+    <value>- showcases new texture scale fix of the v0.88 update for Grid-Circle framework (aka CZG Circle) which occurs due to the sections having different lengths instead of just one like with the Pi-Circle framework
+- also showcases unproportional texture scale fix that might help when using a fixed horizontal stretch amount on arcs with a small inner radius that would lead to heavily distorted textures</value>
+  </data>
 </root>

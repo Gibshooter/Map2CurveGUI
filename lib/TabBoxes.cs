@@ -396,6 +396,27 @@ namespace Map2CurveGUI
             //SelCurveObj.d_draw_rand = checkBox_d_draw_rand.Checked;
 			changesTrue();
 		}
+		
+		private void checkBox_hsunequalfix_CheckedChanged(object sender, EventArgs e)
+		{
+            CurveHandler CH = new CurveHandler();
+            CH.CurveObjListChangeValue(ref CurveList, ref sender, ChangeAll, SelCurveID, cVar.hsunequalfix, checkBox_hsunequalfix.Checked);
+
+            changesTrue();
+            help_Populate(sender, e);
+		}
+
+		private void checkBox_hsunpropfix_CheckedChanged(object sender, EventArgs e)
+		{
+            CurveHandler CH = new CurveHandler();
+            CH.CurveObjListChangeValue(ref CurveList, ref sender, ChangeAll, SelCurveID, cVar.hsunpropfix, checkBox_hsunpropfix.Checked);
+
+            changesTrue();
+            help_Populate(sender, e);
+		}
+
+
+
 
 
 
@@ -1292,6 +1313,69 @@ namespace Map2CurveGUI
 			}
 			catch { textBox_d_pos_max.Text = ST.ToString(); }
 		}
+
+		private void textBox_hsunpropfix_lower_Leave(object sender, EventArgs e)
+		{
+			float temp;
+			ref float ST = ref SelCurveObj.hsunpropfix_limits[0];
+			try
+			{
+				temp = float.Parse(textBox_hsunpropfix_lower.Text);
+				if (temp > 999999)
+				{
+					temp = 999999;
+					textBox_hsunpropfix_lower.Text = "999999";
+				}
+				else if (temp < 0)
+				{
+					temp = 0;
+					textBox_hsunpropfix_lower.Text = "0";
+				}
+				else
+				{
+					textBox_hsunpropfix_lower.Text = temp.ToString();
+				}
+				if (ST != temp) {
+                    CurveHandler CH = new CurveHandler();
+                    CH.CurveObjListChangeValue(ref CurveList, ref sender, ChangeAll, SelCurveID, cVar.hsunpropfix_lower, temp);
+
+					changesTrue();
+				}
+			}
+			catch { textBox_hsunpropfix_lower.Text = ST.ToString(); }
+		}
+
+		private void textBox_hsunpropfix_upper_Leave(object sender, EventArgs e)
+		{
+			float temp;
+			ref float ST = ref SelCurveObj.hsunpropfix_limits[1];
+			try
+			{
+				temp = float.Parse(textBox_hsunpropfix_upper.Text);
+				if (temp > 999999)
+				{
+					temp = 999999;
+					textBox_hsunpropfix_upper.Text = "999999";
+				}
+				else if (temp < 0)
+				{
+					temp = 0;
+					textBox_hsunpropfix_upper.Text = "0";
+				}
+				else
+				{
+					textBox_hsunpropfix_upper.Text = temp.ToString();
+				}
+				if (ST != temp) {
+                    CurveHandler CH = new CurveHandler();
+                    CH.CurveObjListChangeValue(ref CurveList, ref sender, ChangeAll, SelCurveID, cVar.hsunpropfix_upper, temp);
+
+					changesTrue();
+				}
+			}
+			catch { textBox_hsunpropfix_upper.Text = ST.ToString(); }
+		}
+
 
 
 	}

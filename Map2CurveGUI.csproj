@@ -190,6 +190,8 @@
     <None Include="Resources\help_rtf_hshiftsrc.rtf" />
     <None Include="Resources\help_rtf_hstretch.rtf" />
     <None Include="Resources\help_rtf_hstretchamt.rtf" />
+    <None Include="Resources\help_rtf_hsunequalfix.rtf" />
+    <None Include="Resources\help_rtf_hsunpropfix.rtf" />
     <None Include="Resources\help_rtf_mapcarve.rtf" />
     <None Include="Resources\help_rtf_mirror.rtf" />
     <None Include="Resources\help_rtf_mirror_src.rtf" />
@@ -228,6 +230,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="M2CIco2.ico" />
+    <None Include="Resources\Temp_CZGCircle_Preview_1.png" />
+    <None Include="Resources\Temp_CZGCircle_Source.png" />
+    <None Include="Resources\Temp_CZGCircle_Preview_2.png" />
+    <None Include="Resources\preview_hsunpropfix0.png" />
+    <None Include="Resources\preview_hsunpropfix1.png" />
+    <None Include="Resources\preview_hsunequalfix0.png" />
+    <None Include="Resources\preview_hsunequalfix1.png" />
     <None Include="Resources\ico20_editor.png" />
     <None Include="Resources\ico32_editor.png" />
     <None Include="Resources\ico20_save.png" />

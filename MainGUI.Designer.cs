@@ -111,6 +111,16 @@
 			this.textBox_height = new System.Windows.Forms.TextBox();
 			this.label_height = new System.Windows.Forms.Label();
 			this.groupBox_texture_settings = new System.Windows.Forms.GroupBox();
+			this.label_hsunpropfix_upper = new System.Windows.Forms.Label();
+			this.label_hsunpropfix_lower = new System.Windows.Forms.Label();
+			this.textBox_hsunpropfix_lower = new System.Windows.Forms.TextBox();
+			this.textBox_hsunpropfix_upper = new System.Windows.Forms.TextBox();
+			this.label42 = new System.Windows.Forms.Label();
+			this.pictureBox_help_hsunpropfix = new System.Windows.Forms.PictureBox();
+			this.label44 = new System.Windows.Forms.Label();
+			this.checkBox_hsunpropfix = new System.Windows.Forms.CheckBox();
+			this.pictureBox_help_hsunequalfix = new System.Windows.Forms.PictureBox();
+			this.checkBox_hsunequalfix = new System.Windows.Forms.CheckBox();
 			this.pictureBox_help_hstretchamt = new System.Windows.Forms.PictureBox();
 			this.pictureBox_help_hstretch = new System.Windows.Forms.PictureBox();
 			this.pictureBox_help_hshiftoffset = new System.Windows.Forms.PictureBox();
@@ -457,6 +467,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_heightmode)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_height)).BeginInit();
 			this.groupBox_texture_settings.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hsunpropfix)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hsunequalfix)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hstretchamt)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hstretch)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hshiftoffset)).BeginInit();
@@ -897,9 +909,9 @@
 			this.groupBox8.Controls.Add(this.pictureBox_help_mapcarve);
 			this.groupBox8.Controls.Add(this.comboBox_mapcarve);
 			this.groupBox8.Controls.Add(this.label_mapcarve);
-			this.groupBox8.Location = new System.Drawing.Point(362, 26);
+			this.groupBox8.Location = new System.Drawing.Point(6, 144);
 			this.groupBox8.Name = "groupBox8";
-			this.groupBox8.Size = new System.Drawing.Size(350, 58);
+			this.groupBox8.Size = new System.Drawing.Size(350, 46);
 			this.groupBox8.TabIndex = 40;
 			this.groupBox8.TabStop = false;
 			this.groupBox8.Text = "Input File Settings";
@@ -936,12 +948,12 @@
 			// label_mapcarve
 			// 
 			this.label_mapcarve.AutoSize = true;
-			this.label_mapcarve.ForeColor = System.Drawing.Color.Fuchsia;
+			this.label_mapcarve.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.label_mapcarve.Location = new System.Drawing.Point(112, 23);
 			this.label_mapcarve.Name = "label_mapcarve";
-			this.label_mapcarve.Size = new System.Drawing.Size(159, 13);
+			this.label_mapcarve.Size = new System.Drawing.Size(94, 13);
 			this.label_mapcarve.TabIndex = 37;
-			this.label_mapcarve.Text = "Input Map Carving (NEW v0.87)";
+			this.label_mapcarve.Text = "Input Map Carving";
 			// 
 			// label23
 			// 
@@ -1071,9 +1083,9 @@
 			this.groupBox_curve_settings.Controls.Add(this.label_offset);
 			this.groupBox_curve_settings.Controls.Add(this.textBox_offset);
 			this.groupBox_curve_settings.Controls.Add(this.label_radius);
-			this.groupBox_curve_settings.Location = new System.Drawing.Point(6, 154);
+			this.groupBox_curve_settings.Location = new System.Drawing.Point(6, 196);
 			this.groupBox_curve_settings.Name = "groupBox_curve_settings";
-			this.groupBox_curve_settings.Size = new System.Drawing.Size(350, 261);
+			this.groupBox_curve_settings.Size = new System.Drawing.Size(350, 253);
 			this.groupBox_curve_settings.TabIndex = 30;
 			this.groupBox_curve_settings.TabStop = false;
 			this.groupBox_curve_settings.Text = "Curve Framework Settings";
@@ -1364,9 +1376,9 @@
 			this.groupBox_height_ramp.Controls.Add(this.comboBox_heightmode);
 			this.groupBox_height_ramp.Controls.Add(this.textBox_height);
 			this.groupBox_height_ramp.Controls.Add(this.label_height);
-			this.groupBox_height_ramp.Location = new System.Drawing.Point(362, 100);
+			this.groupBox_height_ramp.Location = new System.Drawing.Point(362, 26);
 			this.groupBox_height_ramp.Name = "groupBox_height_ramp";
-			this.groupBox_height_ramp.Size = new System.Drawing.Size(350, 104);
+			this.groupBox_height_ramp.Size = new System.Drawing.Size(350, 96);
 			this.groupBox_height_ramp.TabIndex = 50;
 			this.groupBox_height_ramp.TabStop = false;
 			this.groupBox_height_ramp.Text = "Height and Ramp Settings";
@@ -1481,6 +1493,16 @@
 			// groupBox_texture_settings
 			// 
 			this.groupBox_texture_settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+			this.groupBox_texture_settings.Controls.Add(this.label_hsunpropfix_upper);
+			this.groupBox_texture_settings.Controls.Add(this.label_hsunpropfix_lower);
+			this.groupBox_texture_settings.Controls.Add(this.textBox_hsunpropfix_lower);
+			this.groupBox_texture_settings.Controls.Add(this.textBox_hsunpropfix_upper);
+			this.groupBox_texture_settings.Controls.Add(this.label42);
+			this.groupBox_texture_settings.Controls.Add(this.pictureBox_help_hsunpropfix);
+			this.groupBox_texture_settings.Controls.Add(this.label44);
+			this.groupBox_texture_settings.Controls.Add(this.checkBox_hsunpropfix);
+			this.groupBox_texture_settings.Controls.Add(this.pictureBox_help_hsunequalfix);
+			this.groupBox_texture_settings.Controls.Add(this.checkBox_hsunequalfix);
 			this.groupBox_texture_settings.Controls.Add(this.pictureBox_help_hstretchamt);
 			this.groupBox_texture_settings.Controls.Add(this.pictureBox_help_hstretch);
 			this.groupBox_texture_settings.Controls.Add(this.pictureBox_help_hshiftoffset);
@@ -1498,19 +1520,131 @@
 			this.groupBox_texture_settings.Controls.Add(this.comboBox_texmode);
 			this.groupBox_texture_settings.Controls.Add(this.label_hshiftoffset);
 			this.groupBox_texture_settings.Controls.Add(this.textBox_hshiftoffset);
-			this.groupBox_texture_settings.Location = new System.Drawing.Point(362, 220);
+			this.groupBox_texture_settings.Location = new System.Drawing.Point(362, 128);
 			this.groupBox_texture_settings.Name = "groupBox_texture_settings";
-			this.groupBox_texture_settings.Size = new System.Drawing.Size(350, 185);
+			this.groupBox_texture_settings.Size = new System.Drawing.Size(350, 287);
 			this.groupBox_texture_settings.TabIndex = 60;
 			this.groupBox_texture_settings.TabStop = false;
 			this.groupBox_texture_settings.Text = "Texture Settings";
+			// 
+			// label_hsunpropfix_upper
+			// 
+			this.label_hsunpropfix_upper.AutoSize = true;
+			this.label_hsunpropfix_upper.ForeColor = System.Drawing.Color.Magenta;
+			this.label_hsunpropfix_upper.Location = new System.Drawing.Point(231, 256);
+			this.label_hsunpropfix_upper.Name = "label_hsunpropfix_upper";
+			this.label_hsunpropfix_upper.Size = new System.Drawing.Size(75, 13);
+			this.label_hsunpropfix_upper.TabIndex = 76;
+			this.label_hsunpropfix_upper.Text = "Upper Limit (?)";
+			this.toolTip_general.SetToolTip(this.label_hsunpropfix_upper, "Upper Limit for Texture Scale Proportions");
+			// 
+			// label_hsunpropfix_lower
+			// 
+			this.label_hsunpropfix_lower.AutoSize = true;
+			this.label_hsunpropfix_lower.ForeColor = System.Drawing.Color.Magenta;
+			this.label_hsunpropfix_lower.Location = new System.Drawing.Point(72, 256);
+			this.label_hsunpropfix_lower.Name = "label_hsunpropfix_lower";
+			this.label_hsunpropfix_lower.Size = new System.Drawing.Size(75, 13);
+			this.label_hsunpropfix_lower.TabIndex = 75;
+			this.label_hsunpropfix_lower.Text = "Lower Limit (?)";
+			this.toolTip_general.SetToolTip(this.label_hsunpropfix_lower, "Lower Limit for Texture Scale Proportions");
+			// 
+			// textBox_hsunpropfix_lower
+			// 
+			this.textBox_hsunpropfix_lower.Location = new System.Drawing.Point(6, 252);
+			this.textBox_hsunpropfix_lower.Name = "textBox_hsunpropfix_lower";
+			this.textBox_hsunpropfix_lower.Size = new System.Drawing.Size(60, 20);
+			this.textBox_hsunpropfix_lower.TabIndex = 9;
+			this.textBox_hsunpropfix_lower.Tag = "hsunpropfix_lower";
+			this.textBox_hsunpropfix_lower.Enter += new System.EventHandler(this.help_Populate);
+			this.textBox_hsunpropfix_lower.Leave += new System.EventHandler(this.textBox_hsunpropfix_lower_Leave);
+			// 
+			// textBox_hsunpropfix_upper
+			// 
+			this.textBox_hsunpropfix_upper.Location = new System.Drawing.Point(165, 252);
+			this.textBox_hsunpropfix_upper.Name = "textBox_hsunpropfix_upper";
+			this.textBox_hsunpropfix_upper.Size = new System.Drawing.Size(60, 20);
+			this.textBox_hsunpropfix_upper.TabIndex = 10;
+			this.textBox_hsunpropfix_upper.Tag = "hsunpropfix_upper";
+			this.textBox_hsunpropfix_upper.Enter += new System.EventHandler(this.help_Populate);
+			this.textBox_hsunpropfix_upper.Leave += new System.EventHandler(this.textBox_hsunpropfix_upper_Leave);
+			// 
+			// label42
+			// 
+			this.label42.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.label42.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			this.label42.Location = new System.Drawing.Point(6, 148);
+			this.label42.Name = "label42";
+			this.label42.Size = new System.Drawing.Size(338, 2);
+			this.label42.TabIndex = 72;
+			// 
+			// pictureBox_help_hsunpropfix
+			// 
+			this.pictureBox_help_hsunpropfix.BackgroundImage = global::Map2CurveGUI.Properties.Resources.help_icon18;
+			this.pictureBox_help_hsunpropfix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.pictureBox_help_hsunpropfix.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pictureBox_help_hsunpropfix.Location = new System.Drawing.Point(326, 228);
+			this.pictureBox_help_hsunpropfix.Name = "pictureBox_help_hsunpropfix";
+			this.pictureBox_help_hsunpropfix.Size = new System.Drawing.Size(18, 18);
+			this.pictureBox_help_hsunpropfix.TabIndex = 33;
+			this.pictureBox_help_hsunpropfix.TabStop = false;
+			this.pictureBox_help_hsunpropfix.Click += new System.EventHandler(this.help_Focus);
+			// 
+			// label44
+			// 
+			this.label44.AutoSize = true;
+			this.label44.Location = new System.Drawing.Point(110, 135);
+			this.label44.Name = "label44";
+			this.label44.Size = new System.Drawing.Size(130, 13);
+			this.label44.TabIndex = 71;
+			this.label44.Text = "Horizontal Texture Stretch";
+			// 
+			// checkBox_hsunpropfix
+			// 
+			this.checkBox_hsunpropfix.AutoSize = true;
+			this.checkBox_hsunpropfix.ForeColor = System.Drawing.Color.Magenta;
+			this.checkBox_hsunpropfix.Location = new System.Drawing.Point(6, 229);
+			this.checkBox_hsunpropfix.Name = "checkBox_hsunpropfix";
+			this.checkBox_hsunpropfix.Size = new System.Drawing.Size(233, 17);
+			this.checkBox_hsunpropfix.TabIndex = 8;
+			this.checkBox_hsunpropfix.Tag = "hsunpropfix";
+			this.checkBox_hsunpropfix.Text = "Prohibit Unproportional Scales (NEW v0.88)";
+			this.checkBox_hsunpropfix.UseVisualStyleBackColor = true;
+			this.checkBox_hsunpropfix.CheckedChanged += new System.EventHandler(this.checkBox_hsunpropfix_CheckedChanged);
+			this.checkBox_hsunpropfix.Enter += new System.EventHandler(this.help_Populate);
+			// 
+			// pictureBox_help_hsunequalfix
+			// 
+			this.pictureBox_help_hsunequalfix.BackgroundImage = global::Map2CurveGUI.Properties.Resources.help_icon18;
+			this.pictureBox_help_hsunequalfix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.pictureBox_help_hsunequalfix.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pictureBox_help_hsunequalfix.Location = new System.Drawing.Point(326, 205);
+			this.pictureBox_help_hsunequalfix.Name = "pictureBox_help_hsunequalfix";
+			this.pictureBox_help_hsunequalfix.Size = new System.Drawing.Size(18, 18);
+			this.pictureBox_help_hsunequalfix.TabIndex = 31;
+			this.pictureBox_help_hsunequalfix.TabStop = false;
+			this.pictureBox_help_hsunequalfix.Click += new System.EventHandler(this.help_Focus);
+			// 
+			// checkBox_hsunequalfix
+			// 
+			this.checkBox_hsunequalfix.AutoSize = true;
+			this.checkBox_hsunequalfix.ForeColor = System.Drawing.Color.Magenta;
+			this.checkBox_hsunequalfix.Location = new System.Drawing.Point(6, 206);
+			this.checkBox_hsunequalfix.Name = "checkBox_hsunequalfix";
+			this.checkBox_hsunequalfix.Size = new System.Drawing.Size(284, 17);
+			this.checkBox_hsunequalfix.TabIndex = 7;
+			this.checkBox_hsunequalfix.Tag = "hsunequalfix";
+			this.checkBox_hsunequalfix.Text = "Fix Unequal Section Lengths (Grid-Circle) (NEW v0.88)";
+			this.checkBox_hsunequalfix.UseVisualStyleBackColor = true;
+			this.checkBox_hsunequalfix.CheckedChanged += new System.EventHandler(this.checkBox_hsunequalfix_CheckedChanged);
+			this.checkBox_hsunequalfix.Enter += new System.EventHandler(this.help_Populate);
 			// 
 			// pictureBox_help_hstretchamt
 			// 
 			this.pictureBox_help_hstretchamt.BackgroundImage = global::Map2CurveGUI.Properties.Resources.help_icon18;
 			this.pictureBox_help_hstretchamt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.pictureBox_help_hstretchamt.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.pictureBox_help_hstretchamt.Location = new System.Drawing.Point(326, 150);
+			this.pictureBox_help_hstretchamt.Location = new System.Drawing.Point(326, 180);
 			this.pictureBox_help_hstretchamt.Name = "pictureBox_help_hstretchamt";
 			this.pictureBox_help_hstretchamt.Size = new System.Drawing.Size(18, 18);
 			this.pictureBox_help_hstretchamt.TabIndex = 29;
@@ -1522,7 +1656,7 @@
 			this.pictureBox_help_hstretch.BackgroundImage = global::Map2CurveGUI.Properties.Resources.help_icon18;
 			this.pictureBox_help_hstretch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.pictureBox_help_hstretch.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.pictureBox_help_hstretch.Location = new System.Drawing.Point(326, 125);
+			this.pictureBox_help_hstretch.Location = new System.Drawing.Point(326, 156);
 			this.pictureBox_help_hstretch.Name = "pictureBox_help_hstretch";
 			this.pictureBox_help_hstretch.Size = new System.Drawing.Size(18, 18);
 			this.pictureBox_help_hstretch.TabIndex = 28;
@@ -1608,7 +1742,7 @@
 			// 
 			// textBox_hstretchamt
 			// 
-			this.textBox_hstretchamt.Location = new System.Drawing.Point(6, 149);
+			this.textBox_hstretchamt.Location = new System.Drawing.Point(6, 179);
 			this.textBox_hstretchamt.MaxLength = 10;
 			this.textBox_hstretchamt.Name = "textBox_hstretchamt";
 			this.textBox_hstretchamt.Size = new System.Drawing.Size(100, 20);
@@ -1620,16 +1754,16 @@
 			// label_hstretchamt
 			// 
 			this.label_hstretchamt.AutoSize = true;
-			this.label_hstretchamt.Location = new System.Drawing.Point(112, 153);
+			this.label_hstretchamt.Location = new System.Drawing.Point(112, 183);
 			this.label_hstretchamt.Name = "label_hstretchamt";
-			this.label_hstretchamt.Size = new System.Drawing.Size(181, 13);
+			this.label_hstretchamt.Size = new System.Drawing.Size(94, 13);
 			this.label_hstretchamt.TabIndex = 22;
-			this.label_hstretchamt.Text = "Horizontal Stretch Amount (if 0: Auto)";
+			this.label_hstretchamt.Text = "Amount (if 0: Auto)";
 			// 
 			// checkBox_hstretch
 			// 
 			this.checkBox_hstretch.AutoSize = true;
-			this.checkBox_hstretch.Location = new System.Drawing.Point(6, 126);
+			this.checkBox_hstretch.Location = new System.Drawing.Point(6, 157);
 			this.checkBox_hstretch.Name = "checkBox_hstretch";
 			this.checkBox_hstretch.Size = new System.Drawing.Size(149, 17);
 			this.checkBox_hstretch.TabIndex = 5;
@@ -2009,7 +2143,7 @@
 			this.groupBox_transforms_src.Controls.Add(this.textBox_rot_src_x);
 			this.groupBox_transforms_src.Controls.Add(this.textBox_rot_src_y);
 			this.groupBox_transforms_src.Controls.Add(this.label_scale_src);
-			this.groupBox_transforms_src.Location = new System.Drawing.Point(6, 239);
+			this.groupBox_transforms_src.Location = new System.Drawing.Point(6, 225);
 			this.groupBox_transforms_src.Name = "groupBox_transforms_src";
 			this.groupBox_transforms_src.Size = new System.Drawing.Size(350, 135);
 			this.groupBox_transforms_src.TabIndex = 40;
@@ -2055,12 +2189,12 @@
 			// label_mirror_src
 			// 
 			this.label_mirror_src.AutoSize = true;
-			this.label_mirror_src.ForeColor = System.Drawing.Color.Fuchsia;
+			this.label_mirror_src.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.label_mirror_src.Location = new System.Drawing.Point(206, 108);
 			this.label_mirror_src.Name = "label_mirror_src";
-			this.label_mirror_src.Size = new System.Drawing.Size(112, 13);
+			this.label_mirror_src.Size = new System.Drawing.Size(47, 13);
 			this.label_mirror_src.TabIndex = 58;
-			this.label_mirror_src.Text = "Mirroring (NEW v0.87)";
+			this.label_mirror_src.Text = "Mirroring";
 			// 
 			// pictureBox_help_mirror_src
 			// 
@@ -2382,12 +2516,12 @@
 			// label_mirror
 			// 
 			this.label_mirror.AutoSize = true;
-			this.label_mirror.ForeColor = System.Drawing.Color.Fuchsia;
+			this.label_mirror.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.label_mirror.Location = new System.Drawing.Point(206, 120);
 			this.label_mirror.Name = "label_mirror";
-			this.label_mirror.Size = new System.Drawing.Size(112, 13);
+			this.label_mirror.Size = new System.Drawing.Size(47, 13);
 			this.label_mirror.TabIndex = 43;
-			this.label_mirror.Text = "Mirroring (NEW v0.87)";
+			this.label_mirror.Text = "Mirroring";
 			// 
 			// pictureBox_help_mirror
 			// 
@@ -4623,26 +4757,27 @@
 			// 
 			this.templateIcons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("templateIcons.ImageStream")));
 			this.templateIcons.TransparentColor = System.Drawing.Color.Transparent;
-			this.templateIcons.Images.SetKeyName(0, "Temp_ConcreteWalk_Preview.png");
-			this.templateIcons.Images.SetKeyName(1, "Temp_RailTunnel_Preview.png");
-			this.templateIcons.Images.SetKeyName(2, "Temp_BlackMesaPanel_Preview.png");
-			this.templateIcons.Images.SetKeyName(3, "Temp_80sServer_Preview.png");
-			this.templateIcons.Images.SetKeyName(4, "Temp_RockTerrain_Preview.png");
-			this.templateIcons.Images.SetKeyName(5, "Temp_XenBioWall_Preview.png");
-			this.templateIcons.Images.SetKeyName(6, "Temp_ReinforcedArc_Preview.png");
-			this.templateIcons.Images.SetKeyName(7, "Temp_Composition_Preview.png");
-			this.templateIcons.Images.SetKeyName(8, "Temp_DecoBridge_Preview.png");
-			this.templateIcons.Images.SetKeyName(9, "Temp_DecoBridgeRamp_Preview.png");
-			this.templateIcons.Images.SetKeyName(10, "Temp_LabHallway_Preview.png");
-			this.templateIcons.Images.SetKeyName(11, "Temp_LabHallway2_Preview.png");
-			this.templateIcons.Images.SetKeyName(12, "Temp_PipeShaft_Preview.png");
-			this.templateIcons.Images.SetKeyName(13, "Temp_RailTunnel2_Preview.png");
-			this.templateIcons.Images.SetKeyName(14, "Temp_TechBridge_Preview.png");
-			this.templateIcons.Images.SetKeyName(15, "Temp_TechChamber_Preview.png");
-			this.templateIcons.Images.SetKeyName(16, "Temp_TechPipeHollow_Preview.png");
-			this.templateIcons.Images.SetKeyName(17, "Temp_WaterPipe_Preview.png");
-			this.templateIcons.Images.SetKeyName(18, "Temp_XenAlley_Preview.png");
-			this.templateIcons.Images.SetKeyName(19, "Temp_SqueakyRail_Preview.png");
+			this.templateIcons.Images.SetKeyName(0, "Temp_CZGCircle_Preview.png");
+			this.templateIcons.Images.SetKeyName(1, "Temp_ConcreteWalk_Preview.png");
+			this.templateIcons.Images.SetKeyName(2, "Temp_RailTunnel_Preview.png");
+			this.templateIcons.Images.SetKeyName(3, "Temp_BlackMesaPanel_Preview.png");
+			this.templateIcons.Images.SetKeyName(4, "Temp_80sServer_Preview.png");
+			this.templateIcons.Images.SetKeyName(5, "Temp_RockTerrain_Preview.png");
+			this.templateIcons.Images.SetKeyName(6, "Temp_XenBioWall_Preview.png");
+			this.templateIcons.Images.SetKeyName(7, "Temp_ReinforcedArc_Preview.png");
+			this.templateIcons.Images.SetKeyName(8, "Temp_Composition_Preview.png");
+			this.templateIcons.Images.SetKeyName(9, "Temp_DecoBridge_Preview.png");
+			this.templateIcons.Images.SetKeyName(10, "Temp_DecoBridgeRamp_Preview.png");
+			this.templateIcons.Images.SetKeyName(11, "Temp_LabHallway_Preview.png");
+			this.templateIcons.Images.SetKeyName(12, "Temp_LabHallway2_Preview.png");
+			this.templateIcons.Images.SetKeyName(13, "Temp_PipeShaft_Preview.png");
+			this.templateIcons.Images.SetKeyName(14, "Temp_RailTunnel2_Preview.png");
+			this.templateIcons.Images.SetKeyName(15, "Temp_TechBridge_Preview.png");
+			this.templateIcons.Images.SetKeyName(16, "Temp_TechChamber_Preview.png");
+			this.templateIcons.Images.SetKeyName(17, "Temp_TechPipeHollow_Preview.png");
+			this.templateIcons.Images.SetKeyName(18, "Temp_WaterPipe_Preview.png");
+			this.templateIcons.Images.SetKeyName(19, "Temp_XenAlley_Preview.png");
+			this.templateIcons.Images.SetKeyName(20, "Temp_SqueakyRail_Preview.png");
 			// 
 			// pictureBox_tempL
 			// 
@@ -5197,6 +5332,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_height)).EndInit();
 			this.groupBox_texture_settings.ResumeLayout(false);
 			this.groupBox_texture_settings.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hsunpropfix)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hsunequalfix)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hstretchamt)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hstretch)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_help_hshiftoffset)).EndInit();
@@ -5736,5 +5873,15 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox textBox_log;
         private System.Windows.Forms.CheckBox checkBox_CurveObj_ChangeAll;
-    }
+		private System.Windows.Forms.PictureBox pictureBox_help_hsunpropfix;
+		private System.Windows.Forms.CheckBox checkBox_hsunpropfix;
+		private System.Windows.Forms.PictureBox pictureBox_help_hsunequalfix;
+		private System.Windows.Forms.CheckBox checkBox_hsunequalfix;
+		private System.Windows.Forms.Label label42;
+		private System.Windows.Forms.Label label44;
+		private System.Windows.Forms.TextBox textBox_hsunpropfix_lower;
+		private System.Windows.Forms.TextBox textBox_hsunpropfix_upper;
+		private System.Windows.Forms.Label label_hsunpropfix_upper;
+		private System.Windows.Forms.Label label_hsunpropfix_lower;
+	}
 }

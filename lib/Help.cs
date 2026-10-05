@@ -67,6 +67,8 @@ namespace Map2CurveGUI
             else if (Sender.Name == "pictureBox_help_append") checkBox_append.Focus();
             else if (Sender.Name == "pictureBox_help_target_2") checkBox_export_rmf.Focus();
             else if (Sender.Name == "pictureBox_help_gridsize") textBox_gridsize_x.Focus();
+            else if (Sender.Name == "pictureBox_help_hsunequalfix") checkBox_hsunequalfix.Focus();
+            else if (Sender.Name == "pictureBox_help_hsunpropfix") checkBox_hsunpropfix.Focus();
         }
 
         // Individuals
@@ -101,7 +103,7 @@ namespace Map2CurveGUI
 				TextBox Sender = (TextBox)sender;
 				name = Sender.Name;
 				name_txt = name.Substring(8, name.Length - 8);
-				if (name_txt.Contains("range_")) name_txt = "range";
+				if		(name_txt.Contains("range_")) name_txt = "range";
                 else if (name_txt.Contains("rot_src_")) name_txt = "rot_src";
                 else if (name_txt.Contains("rot_")) name_txt = "rot";
                 else if (name_txt.Contains("move_")) name_txt = "move";
@@ -111,6 +113,7 @@ namespace Map2CurveGUI
                 else if (name_txt.Contains("d_rotz_rand_")) name_txt = "d_rotz_rand";
                 else if (name_txt.Contains("d_movey_rand_")) name_txt = "d_movey_rand";
                 else if (name_txt.Contains("d_pos_")) name_txt = "d_pos";
+                else if (name_txt.Contains("hsunpropfix_")) name_txt = "hsunpropfix";
                 name_img = name_txt;
 			}
 			else if (sender is CheckBox)

@@ -198,9 +198,11 @@ namespace Map2CurveGUI
             checkBox_mirror_src_x.Checked = Curve.mirror_src[0];
             checkBox_mirror_src_y.Checked = Curve.mirror_src[1];
             checkBox_mirror_src_z.Checked = Curve.mirror_src[2];
+			checkBox_hsunpropfix.Checked = Curve.hsunpropfix;
+			checkBox_hsunequalfix.Checked = Curve.hsunequalfix;
 
-            // textboxes numbers
-            textBox_rad.Text = Curve.rad.ToString();
+			// textboxes numbers
+			textBox_rad.Text = Curve.rad.ToString();
 			textBox_offset.Text = Curve.offset.ToString();
 			textBox_res.Text = Curve.res.ToString();
 			textBox_d_draw.Text = Curve.d_draw.ToString();
@@ -239,6 +241,8 @@ namespace Map2CurveGUI
 			textBox_gridsize_y.Text = Curve.gridsize[1].ToString();
 			textBox_gridsize_z.Text = Curve.gridsize[2].ToString();
 			textBox_gaplen.Text = Curve.gaplen.ToString();
+			textBox_hsunpropfix_lower.Text = Curve.hsunpropfix_limits[0].ToString();
+			textBox_hsunpropfix_upper.Text = Curve.hsunpropfix_limits[1].ToString();
 
 			if (temp_ChangesMade) changesTrue();
 			else changesFalse();
@@ -266,6 +270,8 @@ namespace Map2CurveGUI
 			checkBox_flatcircle.Checked = Curve.flatcircle;
 			checkBox_ramp.Checked = Curve.ramp;
 			checkBox_hstretch.Checked = Curve.hstretch;
+			checkBox_hsunpropfix.Checked = Curve.hsunpropfix;
+			checkBox_hsunequalfix.Checked = Curve.hsunequalfix;
 
 			// textboxes numbers
 			textBox_rad.Text = Curve.rad.ToString();
@@ -276,6 +282,8 @@ namespace Map2CurveGUI
 			textBox_height.Text = Curve.height.ToString();
 			textBox_hshiftoffset.Text = Curve.hshiftoffset.ToString();
 			textBox_hstretchamt.Text = Curve.hstretchamt.ToString();
+			textBox_hsunpropfix_lower.Text = Curve.hsunpropfix_limits[0].ToString();
+			textBox_hsunpropfix_upper.Text = Curve.hsunpropfix_limits[1].ToString();
 		}
 
 

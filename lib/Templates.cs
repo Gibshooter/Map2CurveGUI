@@ -41,6 +41,17 @@ namespace Map2CurveGUI
 		{
             TempList.Add(
                 new Template(
+                    "CZG Circle Hallway Arc",
+                    Resources.TXT_TEMP_CZGCircle,
+                    "Templates\\CZGCircle\\Hallway_curved.txt",
+                    1,
+                    Resources.Temp_CZGCircle_Preview_1,
+                    Resources.Temp_CZGCircle_Preview_2,
+                    Resources.Temp_CZGCircle_Source
+                    )
+                );
+            TempList.Add(
+                new Template(
                     "Concrete Walk",
                     Resources.TXT_TEMP_ConcreteWalk,
                     "Templates\\ConcreteWalk\\ConcreteWalk.txt",

@@ -278,6 +278,5 @@ namespace Map2CurveGUI
                 }
             }
         }
-
-    }
+	}
 }

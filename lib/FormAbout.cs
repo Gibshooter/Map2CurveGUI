@@ -22,7 +22,7 @@ namespace Map2CurveGUI
 		private void SetVersion ()
 		{
 			var Version = System.Windows.Forms.Application.ProductVersion;
-			label_aboutVersion.Text = String.Format("{0}", Version);
+			label_aboutVersion.Text = String.Format("{0}", Version) + " made for M2C v0.88";
 		}
 
 		private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
